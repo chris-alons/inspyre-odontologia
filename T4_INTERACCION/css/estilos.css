@@ -1,0 +1,639 @@
+html {
+    scroll-behavior: smooth;/*agrega un desplazamiento suave*/
+}
+  .colornavbartop{
+    background-color: white;
+  }
+  
+  .logoimageninspire{
+    height: 100px;
+    width: auto;
+    margin-bottom: 20px;
+    margin-left: -30px;
+    margin-top: 10px;
+  }
+
+  .navbar-nav a{
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    margin-right: 30px;
+    color: #276ea8;
+  }
+
+  
+  .boton-navbar{
+    color: white!important;
+    background-color: #00acee;
+    padding-left: 5px;
+
+  }
+  .boton-navbar:hover{
+    color: white!important;
+    background-color: #3e6dca;
+
+  }
+
+  .bg-modal {
+    background-color: #e5f8ff;
+    color: black;
+    font-weight: 600;
+  }
+
+  .imagenmodal{
+    height: auto ;
+    width: 100%;
+  }
+
+  .imagenCabecera {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    background-image: url("https://d1kw0nx8pk9xzh.cloudfront.net/0001/78674b1a/resize-crop(w=1600;h=900):sharpen(level=0):output(format=jpeg)/up/dt/2022/06/UB-Paciente.jpg");
+    background-size: auto; 
+    background-position: center center; 
+    height: 550px;
+  }
+
+
+  .textocabecera {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); 
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .textocabecera p {
+    font-size: 60px;
+    font-weight: 500;
+    font-family: 'Roboto Slab', serif;
+    background-image: linear-gradient(to bottom, #1db985, #74ecd8); 
+    -webkit-background-clip: text; 
+    -webkit-text-stroke: 0.8px black; 
+    color: transparent; 
+  }
+  .textocabecera span{
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Merriweather', serif;
+    color: white;
+    -webkit-text-stroke: 0.5px black; 
+
+  }
+
+
+
+  .fondoespecialidad{
+    background-color: #2636c2;
+    color: white;  
+  }
+  .fondoespecialidad a{
+    text-decoration: none;
+    color: white; 
+  }
+  .fondoespecialidad a:hover{
+    background-color: #f0faf8;
+    color:#2636c2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.5s ease;  
+  }
+
+  .fondoespecialidad:hover {
+    background-color: #f0faf8;
+    color:#2636c2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.5s ease; 
+
+  }
+  
+
+  .tituloespecialidad{
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-left: 15px;
+  }
+
+  .rayita{
+    font-size: 20px;
+    position: relative;
+    top: -8px !important;
+    margin-left: 30px;
+  }
+  
+  .iconoespecialidad{
+    margin-top: 50px;
+    font-size: 70px !important;
+    margin-left: 15px;
+    margin-bottom: 15px;
+
+  }
+  .textoespecialidad{
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 15px;
+  }
+  .masespecialidad {
+    text-align: right;
+    font-size: 17px;
+    margin-top: 45px !important;
+    margin-right: 15px;
+  }
+
+  .iconoflecha{
+    font-size: 15px !important;
+    margin-left: 5px;
+    margin-bottom: 20px;
+  }
+
+
+  .fondovermas{
+    background-color: #00acee;
+    color: white;
+  }
+
+  .fondovermas:hover{
+    background-color: #75d6ea;
+    color:black;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+  }
+  
+
+  /*TARJETA DE LA IZQUIERDA GRANDE*/
+  .carta-grande{
+    position: relative;
+    width: 300px;
+    height: 545px;
+  }
+
+  .carta-grande .cara{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+  }
+
+  .carta-grande .adelante{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+
+  }
+
+  .carta-grande .adelante img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .carta-grande .adelante p{
+    position: absolute;
+    font-size: 17px;
+    font-weight: 700;
+    bottom:0;
+    width: 100%;
+    height: 50px;
+    line-height: 45px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+
+
+  .carta-grande .atras{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3,35,54);
+    padding: 15px;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+  }
+
+  .carta-grande .atras .link{
+    border-top: solid 1px white;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .carta-grande .atras .link a{
+    color: white
+  }
+
+  .carta-grande .atras h3{
+    font-size: 22px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+  }
+
+  .carta-grande .atras p{
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  .carta-grande:hover .adelante{
+    transform: perspective(600px) rotateY(180deg);
+  }
+
+  .carta-grande:hover .atras{
+    transform: perspective(600px) rotateY(360deg);
+  }
+  
+
+
+  /*TARJETA CHICAS DE SERVICIO*/
+
+  .carta-chica{
+    position: relative;
+    width: 300px;
+    height: 260px;
+  }
+
+  .carta-chica .cara{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+  }
+
+  .carta-chica .adelante{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+
+  }
+
+  .carta-chica .adelante img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .carta-chica .adelante p{
+    position: absolute;
+    font-size: 17px;
+    font-weight: 700;
+    bottom:0;
+    width: 100%;
+    height: 50px;
+    line-height: 45px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+
+
+  .carta-chica .atras{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3,35,54);
+    padding: 15px;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+  }
+
+  .carta-chica .atras .link{
+    border-top: solid 1px white;
+    height: 30px;
+    line-height: 40px;
+  }
+
+  .carta-chica .atras .link a{
+    font-size: 14px;
+    color: white
+  }
+
+  .carta-chica .atras h3{
+    font-size: 19px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+  }
+
+  .carta-chica .atras p{
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  .carta-chica:hover .adelante{
+    transform: perspective(600px) rotateY(180deg);
+  }
+
+  .carta-chica:hover .atras{
+    transform: perspective(600px) rotateY(360deg);
+  }
+
+  
+  .secciones article{
+    padding: 45px;
+  }
+  .secciones article p{
+    text-align: justify;
+    letter-spacing: 0.5px;
+  }
+
+  
+  .imghistoria{
+    box-shadow: 0px 5px 10px black;
+    margin-top: 30px;
+    height: 500px;
+  }
+
+  .clase {
+    margin-top: 90px;
+    width: 280px;
+    background-color: rgb(92, 225, 248);
+    border-radius: 10px;
+    
+  }
+
+
+  .clase a{
+    color: rgb(0, 0, 0);
+  }
+  .clase a:hover{
+    color:black;
+  }
+
+  .clase .nav-link.active{
+    
+    font-size: 18px;
+    font-weight: 600;
+    color:black;
+    background-color: rgb(157, 245, 250);
+  }
+
+  .secciones.card{
+    color: rgb(0, 0, 0);
+    height: 305px;
+    width: 560px;
+  }
+
+  .secciones h2{
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: rgb(31, 31, 160);
+    padding-bottom: 20px;
+
+  }
+
+  .logohistoria{
+    position: absolute;
+    top:10px;
+    right: 50px;
+    width: 100px;
+  }
+  
+
+
+  
+
+  
+  .container-footer{
+    display:flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 3rem;
+  }
+  
+  .menu-footer{
+  
+    display: grid;
+    grid-template-columns: repeat(3,1fr) 30rem;
+    gap: 3rem;
+    justify-items: center;
+  
+  }
+  
+  .title-footer{
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  
+  .contact-info,
+  .information,
+  .my-account,
+  .newsletter{
+  
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .contact-info ul,
+  .information ul,
+  .my-account ul{
+  
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+     
+  }
+  
+  
+  .contact-info ul li,
+  .information ul li,
+  .my-account ul li{
+  
+    list-style: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  
+  .information ul li a,
+  .my-account ul li a{
+  
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+  
+  }
+  
+  
+  .information ul li a:hover,
+  .social-icons{
+    display: flex;
+    gap: 1.5rem; /*separación equidistante*/
+  }
+  
+  .social-icons span{
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social-icons span i{
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  
+  .facebook{
+    background-color: #3b5998;
+  }
+  
+  .twitter{
+    background-color: #00acee;
+  }
+  
+  .youtube{
+    background-color: #c4302b;
+  }
+  
+  .pinterest{
+    background-color: #c8232c;
+  }
+  
+  .instagram{
+    background: linear-gradient( /*permite crear fondos degradados*/
+        #405de6,
+        #833ab4,
+        #c13584,
+        #e1306c,
+        #fd1d1d,
+        #f56040,
+        #fcaf45
+    );
+  }
+  
+  .content p{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 300;
+  }
+  
+  .content input{
+    outline: none; /*quitar bordes*/
+    background: none;
+    border: none;
+    border-bottom: 2px solid #d2b495;
+    padding: 0.5rem 0 1.2rem;/*superior, derecha e izquierda, inferior*/
+    display: block;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    width: 100%;
+    font-family: inherit;
+  }
+  
+  .content input::-webkit-input-placeholder{
+    color: #eee;
+  
+  }
+  
+  .content button{
+    border: none;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 600;
+  
+  }
+  
+  .content button:hover{
+    background-color: rgba(255, 0, 0, 0.468);
+    color: white;
+  
+  }
+  
+  .copyright{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    border-top: 1px solid #d2b495;
+  
+  }
+  
+  .copyright p{
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+  .copyright img{
+    height: 100px;
+    width: auto;
+  }
+  
+
+
+  /*INDEX ESPECIALIDADES*/
+
+  .especialidades{
+    padding: 50px 50px;
+    border: 1px solid #000; 
+  }
+
+  .imagen-esp{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .imagen-esp img{
+    
+    height: 300px;
+    width: 490px;
+    align-self: center;
+  }
+
+  .esp-row{
+    margin-top: 20px;
+    margin-bottom: 70px;
+    border-bottom: 1px solid #000;
+  }
+  .esp-row:last-of-type {
+    border-bottom: none;
+  }
+  
+  .esp-row .col-7{
+    padding: 0px 40px;
+  }
+  .esp-row h3{
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+  }
+  .esp-row p{
+    text-align: justify;
+    margin-bottom: 30px;
+  }
+  .esp-row h4{
+    margin-bottom: 30px;
+  }
+  .esp-row li{
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+
+  .celeste{
+    background-color: #eefcff;
+  }
